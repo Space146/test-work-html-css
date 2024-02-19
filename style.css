@@ -1,0 +1,1784 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1119px;
+    margin: 0 auto;
+}
+
+.hidden_main {
+    visibility: hidden;
+}
+
+.second_icon {
+    width: 0px;
+    height: 0px;
+    padding-top: 15px;
+    padding-left: 109px;
+}
+
+.three_dashes {
+    width: 0px;
+    height: 0px;
+    padding-top: 23px;
+    padding-left: 24px;
+}
+
+/* -----------код для header----------- */
+
+.header {
+    display: flex;
+    background-color: #1C1B2F;
+    color: #FFF;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+}    
+
+
+.number {
+    width: 158px;
+    height: 15px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 23.4px;
+    padding-left: 161px;
+    padding-top: 10px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.registration {
+    width: 110px;
+    height: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.4px;
+    margin: 0;
+    padding-left: 834px;
+    padding-right: 12px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    height: 24px;
+    padding-right: 160px;
+    padding-top: 8px;
+}
+
+.logo__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 158px;
+    padding-top: 24px;
+    padding-left: 160px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-self: auto;
+    padding-right: 160px;
+}
+
+.price_faq {
+    padding-top: 68px;
+    gap: 40px;
+}
+
+.price {
+    width: 54px;
+    height: 17px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 40px;
+    padding-top: 68px;
+}
+
+.faq {
+    width: 68px;
+    height: 17px;
+    padding-right: 381px;
+    padding-top: 70px;
+}
+
+.button_settings {
+    padding-top: 56px;
+}
+
+.button_primary {
+    width: 198px;
+    height: 48px;
+    font-size: 17px;
+    border: 1px solid #F38F57;
+    border-radius: 8px;
+    background-color: #F38F57;
+    color: #FFF;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 320px) {
+    .header {
+        display: flex;
+        background-color: #1C1B2F;
+        color: #FFF;
+        height: 40px;
+        font-family: 'Montserrat', sans-serif;
+    }    
+
+
+    .number {
+        width: 158px;
+        height: 15px;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 23.4px;
+        padding-left: 161px;
+        padding-top: 10px;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .registration {
+        width: 110px;
+        height: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23.4px;
+        margin: 0;
+        padding-left: 834px;
+        padding-right: 12px;
+        padding-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        height: 24px;
+        padding-right: 160px;
+        padding-top: 8px;
+    }
+
+    .second_icon {
+        width: 32px;
+        height: 32px;
+        padding-top: 15px;
+        padding-left: 109px;
+    }
+
+    .three_dashes {
+        width: 32px;
+        height: 16px;
+        padding-top: 23px;
+        padding-left: 24px;
+    }
+
+    .logo__container {
+        display: flex;
+        justify-content: space-between;
+        order: 1;
+    }
+
+    .logo {
+        width: 83px;
+        height: 42px;
+        padding-top: 8px;
+        padding-left: 20px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-self: auto;
+        padding-right: 160px;
+    }
+
+    .price_faq {
+        padding-top: 68px;
+        gap: 40px;
+    }
+
+    .price {
+        width: 54px;
+        height: 17px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        padding-right: 40px;
+        padding-top: 68px;
+    }
+
+    .faq {
+        width: 68px;
+        height: 17px;
+        padding-right: 381px;
+        padding-top: 70px;
+    }
+
+    .button_settings {
+        padding-top: 56px;
+    }
+
+    .button_primary {
+        width: 198px;
+        height: 48px;
+        font-size: 17px;
+        border: 1px solid #F38F57;
+        border-radius: 8px;
+        background-color: #F38F57;
+        color: #FFF;
+        margin: 0;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+/* -----------конец кода для header----------- */
+
+/* -----------начало кода для main----------- */
+/* -----------section 1----------- */
+.first_content {
+    width: 100%;
+    padding-bottom: 132px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 2%;
+    width: 886px;
+    height: 117px;
+    padding-left: 157px;
+    padding-top: 80px;
+    margin: 0;
+}
+
+.h2_content {
+    margin: 0;
+    width: 556px;
+    height: 37px;
+    padding-top: 20px;
+    padding-left: 157px;
+    font-weight: 800;
+    font-size: 38px;
+    color: #9C9CA1;
+}
+
+/* .picture {
+    width: 584px;
+    height: 536px;
+    padding-left: 695px;
+    padding-top: 140px;
+    background-image: url(./assets/Group\ 155.png);
+    background-size: 584px;
+    background-repeat: no-repeat;
+    background-position: right top;
+} */
+
+.first_string {
+    display: flex;
+    width: 650px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkmark {
+    width: 32px;
+    height: 24px;
+    padding-top: 60px;
+    padding-left: 160px;
+}
+
+.firsr_cell {
+    width: 434px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 60px;
+    padding-left: 24px;
+    color: #1C1B2F;
+} 
+
+.second_string {
+    display: flex;
+    width: 650px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.second_checkmark {
+    width: 32px;
+    height: 24px;
+    padding-top: 28px;
+    padding-left: 160px;
+}
+
+.second_cell {
+    width: 434px;
+    height: 50px;
+    padding-top: 28px;
+    padding-left: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1C1B2F;
+}
+
+.third_string {
+    display: flex;
+    width: 675px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.third_cell {
+    width: 459px;
+    height: 50px;
+    padding-top: 28px;
+    padding-left: 24px;
+    color: #1C1B2F;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.setting_button {
+    width: 235px;
+    padding-left: 160px;
+    padding-top: 69px;
+}
+
+.button_secondary {
+    width: 232px;
+    height: 48px;
+    border: 1px solid #F38F57;
+    border-radius: 8px;
+    background-color: #F38F57;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+}
+
+@media (max-width: 320px) {
+    .first_content {
+        width: 100%;
+        padding-bottom: 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h1 {
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: 2%;
+        width: 279px;
+        height: 88px;
+        padding-left: 20px;
+        padding-top: 44px;
+        margin: 0;
+    }
+    
+    .h2_content {
+        margin: 0;
+        width: 273px;
+        height: 17px;
+        padding-top: 12px;
+        padding-left: 20px;
+        font-weight: 800;
+        font-size: 18px;
+        color: #9C9CA1;
+    }
+    
+    /* .picture {
+        width: 584px;
+        height: 536px;
+        padding-left: 695px;
+        padding-top: 140px;
+        background-image: url(./assets/Group\ 155.png);
+        background-size: 584px;
+        background-repeat: no-repeat;
+        background-position: right top;
+    } */
+    
+    .first_string {
+        display: flex;
+        width: 650px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .checkmark {
+        width: 24px;
+        height: 18px;
+        padding-top: 52px;
+        padding-left: 20px;
+    }
+    
+    .firsr_cell {
+        width: 148px;
+        height: 32px;
+        font-size: 14px;
+        font-weight: 600;
+        padding-top: 52px;
+        padding-left: 20px;
+        color: #1C1B2F;
+    } 
+    
+    .second_string {
+        display: flex;
+        width: 650px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .second_checkmark {
+        width: 24px;
+        height: 18px;
+        padding-top: 24px;
+        padding-left: 20px;
+    }
+    
+    .second_cell {
+        width: 138px;
+        height: 50px;
+        padding-top: 24px;
+        padding-left: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #1C1B2F;
+    }
+    
+    .third_string {
+        display: flex;
+        width: 675px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .third_cell {
+        width: 170px;
+        height: 58px;
+        padding-top: 24px;
+        padding-left: 20px;
+        color: #1C1B2F;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .setting_button {
+        width: 235px;
+        padding-left: 160px;
+        padding-top: 69px;
+    }
+    
+    .button_secondary {
+        width: 232px;
+        height: 48px;
+        border: 1px solid #F38F57;
+        border-radius: 8px;
+        background-color: #F38F57;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #FFF;
+    }
+}
+/* -----------конец section 1----------- */
+
+
+/* -----------начало section 2----------- */
+.second_content {
+    margin: 0;
+    background-color: #FFFCFA;
+    width: 100%;
+    height: 720px;
+    padding-bottom: 136px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.second_h2 {
+    width: 724px;
+    height: 37px;
+    padding-top: 120px;
+    padding-left: 380px;
+    font-weight: 800;
+    font-size: 38px;
+    color: #1C1B2F;
+    margin: 0;
+    text-align: center;
+}
+
+.h3_content {
+    width: 187px;
+    height: 23px;
+    padding-top: 24px;
+    padding-left: 626px;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    color: #9C9CA1;
+    text-align: center;
+}
+
+/* .line_image {
+    width: 1532px;
+    height: 140px;
+    padding-top: 80px;
+    padding-left: -20px;
+    border: 2px #FDEAD7;
+    color: #FDEAD7;
+    
+} */
+
+.digits_and_text {
+    display: flex;
+    background-color: #FFFCFA;
+    width: 974px;
+    height: 249px;
+    padding-top: 131px;
+    padding-left: 160px;
+    gap: 169px;
+}
+
+.digit {
+    width: 93px;
+    height: 81px;
+    font-weight: 800;
+    font-size: 84px;
+    color: #F38F57;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.digit_text {
+    width: 260px;
+    height: 136px;
+    padding-top: 32px;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1C1B2F;
+}
+
+@media (max-width: 320px) {
+    .second_content {
+        margin: 0;
+        background-color: #FFFCFA;
+        width: 100%;
+        height: 571px;
+        padding-bottom: 52px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .second_h2 {
+        width: 268px;
+        height: 48px;
+        padding-top: 52px;
+        padding-left: 26px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #1C1B2F;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .h3_content {
+        width: 181px;
+        height: 17px;
+        padding-top: 16px;
+        padding-left: 69px;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+        color: #9C9CA1;
+        text-align: center;
+    }
+    
+    /* .line_image {
+        width: 1532px;
+        height: 140px;
+        padding-top: 80px;
+        padding-left: -20px;
+        border: 2px #FDEAD7;
+        color: #FDEAD7;
+        
+    } */
+    
+    .digits_and_text {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFCFA;
+        width: 974px;
+        height: 249px;
+        padding-top: 68px;
+        padding-left: 20px;
+        gap: 48px;
+    }
+    
+    .digit_container {
+        display: flex;
+        width: 280px;
+        height: 80px;
+    }
+
+    .digit {
+        width: 60px;
+        height: 52px;
+        font-weight: 800;
+        font-size: 54px;
+        color: #F38F57;
+        font-family: 'Montserrat', sans-serif;
+        order: 1;
+    }
+    
+    .digit_text {
+        width: 192px;
+        height: 68px;
+        padding-top: 12px;
+        padding-left: 28px;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        color: #1C1B2F;
+        order: 1;
+    }
+}
+/* -----------конец section 2----------- */
+
+
+/* -----------начало section 3----------- */
+.price_qesstion {
+    width: 412px;
+    height: 23px;
+    padding-top: 100px;
+    padding-left: 544px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1C1B2F;
+}
+
+.comparison {
+    display: flex;
+    width: 919px;
+    height: 21px;
+    padding-left: 160px;
+    padding-top: 60px;
+    color: #9C9CA1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short_text {
+    width: 214px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.second_short_text {
+    width: 341px;
+    height: 21px;
+    padding-left: 342px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.borders {
+    display: flex;
+    width: 1122px;
+    height: 135px;
+    padding-left: 160px;
+    padding-top: 20px;
+    padding-bottom: 136px;
+    gap: 10px;
+}
+
+.first_border {
+    width: 544px;
+    height: 135px;
+    border: 2px solid #1C1B2F;
+    border-radius: 14px;
+}
+
+.setting_first_border {
+    display: flex;
+    width: 364px;
+    height: 21px;
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1C1B2F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orange_price {
+    color: #F38F57;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.border_text {
+    display: flex;
+    width: 239px;
+    height: 40px;
+    color: #9C9CA1;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services {
+    padding-left: 25px;
+}
+
+.second_border {
+    width: 544px;
+    height: 135px;
+    border: 2px solid #F38F57;
+    border-radius: 14px;
+}
+
+.setting_second_border {
+    display: flex;
+    width: 490px;
+    height: 21px;
+    color: #1C1B2F;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 8px;
+}
+
+.second_border_text {
+    display: flex;
+    width: 450px;
+    height: 56px;
+    color: #9C9CA1;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.setting_service {
+    width: 222px;
+    height: 56px;
+}
+
+.second_services {
+    padding-left: 55px;
+}
+
+@media (max-width: 320px) {
+    .price_qesstion {
+        width: 281px;
+        height: 39px;
+        padding-top: 56px;
+        padding-left: 19px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #9C9CA1;
+    }
+    
+    .comparison {
+        display: flex;
+        flex-direction: column;
+        width: 919px;
+        height: 21px;
+        padding-left: 20px;
+        padding-top: 32px;
+        color: #9C9CA1;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .short_text {
+        width: 193px;
+        height: 14px;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        order: 1;
+    }
+    
+    .second_short_text {
+        width: 193px;
+        height: 14px;
+        padding-top: 257px;
+        padding-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        order: 3;
+    }
+    
+    .borders {
+        display: flex;
+        width: 1122px;
+        height: 521px;
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-bottom: 136px;
+        gap: 58px;
+        flex-direction: column;
+    }
+    
+    .first_border {
+        width: 280px;
+        height: 213px;
+        border: 2px solid #1C1B2F;
+        border-radius: 14px;
+        order: 2;
+    }
+    
+    .setting_first_border {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 21px;
+        padding-top: 20px;
+        padding-left: 20px;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #1C1B2F;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .k15 {
+        padding-top: 30px;
+    }
+
+    .hidden {
+        visibility: hidden;
+        padding-bottom: 10px;
+    }
+
+    .line {
+        border: 1px solid #d3d3d8;
+        width: 216px;
+        height: 1px;
+    }
+    
+    .orange_price {
+        color: #F38F57;
+        padding-top: 0px;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .border_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40px;
+        color: #9C9CA1;
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 0px;
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .services {
+        padding-top: 47px;
+        padding-left: 0px;
+    }
+    
+    .second_border {
+        width: 280px;
+        height: 250px;
+        border: 2px solid #F38F57;
+        border-radius: 14px;
+        order: 4;
+    }
+    
+    .setting_second_border {
+        display: flex;
+        flex-direction: column;
+        width: 478px;
+        height: 21px;
+        color: #1C1B2F;
+        font-size: 18px;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+        gap: 8px;
+    }
+
+    .question {
+        padding-top: 78px;
+    }
+    
+    .second_border_text {
+        display: flex;
+        flex-direction: column;
+        width: 386px;
+        height: 56px;
+        color: #9C9CA1;
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 2px;
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .second_services {
+        padding-left: 0px;
+        padding-top: 46px;
+    }
+}
+/* -----------конец section 3----------- */
+
+
+/* -----------начало section 4----------- */
+.section_container {
+    width: 100%;
+    height: 825px;
+    background-color: #FFFCFA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h2_title {
+    width: 950px;
+    height: 82px;
+    padding-left: 245px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: #1C1B2F;
+    margin: 0;
+}
+
+.h2_subtitle {
+    width: 421px;
+    height: 23px;
+    padding-top: 24px;
+    padding-left: 509px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #9C9CA1;
+}
+
+.flex_container {
+    display: flex;
+    width: 636px;
+    height: 52px;
+    padding-left: 392px;
+    padding-top: 100px;
+}
+
+.price_setting1 {
+    width: 253px;
+    color: #F38F57;
+    font-size: 54px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price_setting2 {
+    width: 222px;
+    color: #F38F57;
+    font-size: 54px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 161px;
+}
+
+.second_flex_container {
+    display: flex;
+    width: 654px;
+    height: 57px;
+    padding-left: 392px;
+    padding-top: 20px;
+    color: #9C9CA1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price_description1 {
+    width: 170px;
+    height: 36px;
+}
+
+.price_description2 {
+    padding-left: 244px;
+}
+
+.third_flex_container {
+    display: flex;
+    width: 654px;
+    height: 52px;
+    padding-left: 392px;
+    padding-top: 82px;
+}
+
+.price_setting3 {
+    width: 226px;
+    height: 52px;
+    color: #F38F57;
+    font-size: 54px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price_setting4 {
+    width: 240px;
+    height: 52px;
+    color: #9C9CA1;
+    font-size: 54px;
+    font-weight: 800;
+    padding-left: 188px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fourth_flex_container {
+    display: flex;
+    width: 609px;
+    height: 78px;
+    padding-left: 392px;
+    padding-top: 20px;
+    padding-bottom: 136px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9C9CA1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price_description3 {
+    width: 247px;
+    height: 78px;
+}
+
+.price_description4 {
+    width: 193px;
+    padding-left: 169px;
+}
+
+@media (max-width: 320px) {
+    .section_container {
+        width: 100%;
+        height: 825px;
+        background-color: #FFFCFA;
+        font-family: 'Montserrat', sans-serif;
+        flex-direction: column;
+    }
+    
+    .h2_title {
+        width: 280px;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 52px;
+        text-align: start;
+        font-size: 22px;
+        font-weight: 800;
+        color: #1C1B2F;
+        margin: 0;
+    }
+    
+    .h2_subtitle {
+        width: 181px;
+        height: 39px;
+        padding-top: 16px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: start;
+        color: #9C9CA1;
+    }
+    
+    .flex_container {
+        display: flex;
+        width: 636px;
+        height: 25px;
+        padding-left: 20px;
+        padding-top: 56px;
+        flex-direction: column;
+    }
+    
+    .price_setting1 {
+        width: 152px;
+        height: 25px;
+        color: #F38F57;
+        font-size: 26px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        order: 1;
+    }
+    
+    .price_setting2 {
+        width: 152px;
+        height: 25px;
+        color: #F38F57;
+        font-size: 26px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        order: 3;
+        padding-left: 0px;
+        padding-top: 84px;
+    }
+    
+    .second_flex_container {
+        display: flex;
+        flex-direction: column;
+        width: 654px;
+        height: 32px;
+        padding-left: 20px;
+        padding-top: 12px;
+        color: #1C1B2F;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .price_description1 {
+        width: 192px;
+        height: 32px;
+        order: 2;
+    }
+    
+    .price_description2 {
+        padding-top: 77px;
+        padding-left: 0px;
+        order: 4;
+    }
+    
+    .third_flex_container {
+        display: flex;
+        flex-direction: column;
+        width: 654px;
+        height: 52px;
+        padding-left: 20px;
+        padding-top: 167px;
+    }
+    
+    .price_setting3 {
+        width: 152px;
+        height: 25px;
+        color: #F38F57;
+        font-size: 26px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        order: 5;
+    }
+    
+    .price_setting4 {
+        width: 152px;
+        height: 25px;
+        color: #9C9CA1;
+        font-size: 26px;
+        font-weight: 800;
+        padding-left: 0px;
+        padding-top: 120px;
+        font-family: 'Montserrat', sans-serif;
+        order: 7;
+    }
+    
+    .fourth_flex_container {
+        display: flex;
+        flex-direction: column;
+        width: 408px;
+        height: 78px;
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-bottom: 52px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1C1B2F;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .price_description3 {
+        width: 247px;
+        height: 78px;
+        order: 6;
+    }
+    
+    .price_description4 {
+        width: 193px;
+        padding-top: 64px;
+        padding-left: 0px;
+        order: 8;
+    }
+}
+/* ----------- конец section 4----------- */
+
+
+/* ----------- начало section 5------------ */
+.section_5 {
+    width: 100%;
+    height: 605px;
+}
+
+.review {
+    width: 582px;
+    height: 37px;
+    padding-top: 120px;
+    padding-left: 429px;
+    text-align: center;
+    color: #1C1B2F;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.setting_third_border {
+    padding-left: 392px;
+    padding-top: 60px;
+}
+
+.third_border {
+    width: 645px;
+    height: 200px;
+    border: 2px solid #1C1B2F;
+    border-radius: 14px;
+}
+
+.review_setting {
+    display: flex;
+    width: 566px;
+    height: 104px;
+    padding-top: 48px;
+    padding-left: 28px;
+}
+
+.picture_in_border {
+    width: 56px;
+    height: 56px;
+}
+
+.robert {
+    width: 180px;
+    height: 15px;
+    padding-left: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1C1B2F;
+    font-weight: 700;
+}
+
+.grey_text {
+    width: 205px;
+    height: 12px;
+    padding-top: 4px;
+    padding-left: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #9C9CA1;
+}
+
+.unknown_text {
+    width: 510px;
+    height: 57px;
+    padding-left: 32px;
+    padding-top: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1C1B2F;
+}
+
+.arrows_and_mugs {
+    display: flex;
+    width: 240px;
+    height: 16px;
+    padding-top: 36px;
+    padding-left: 600px;
+    gap: 36px;
+}
+
+.arrow {
+    width: 50px;
+    height: 16px;
+}
+
+.mug {
+    width: 68px;
+    height: 12px;
+    padding-top: 2px;
+}
+
+@media (max-width: 320px) {
+    .section_5 {
+        width: 100%;
+        height: 481px;
+    }
+    
+    .review {
+        width: 280px;
+        height: 48px;
+        padding-top: 52px;
+        padding-left: 20px;
+        text-align: center;
+        color: #1C1B2F;
+        font-size: 22px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .setting_third_border {
+        padding-left: 20px;
+        padding-top: 52px;
+    }
+    
+    .third_border {
+        width: 280px;
+        height: 229px;
+        border: 2px solid #1C1B2F;
+        border-radius: 14px;
+    }
+    
+    .review_setting {
+        display: flex;
+        width: 56px;
+        height: 56px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    
+    .picture_in_border {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .robert {
+        width: 131px;
+        height: 14px;
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #1C1B2F;
+        font-weight: 700;
+    }
+    
+    .grey_text {
+        width: 149px;
+        height: 12px;
+        padding-top: 4px;
+        padding-left: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        color: #9C9CA1;
+    }
+    
+    .unknown_text {
+        width: 240px;
+        height: 105px;
+        padding-left: 0px;
+        padding-top: 38px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1C1B2F;
+        order: 2;
+    }
+    
+    .arrows_and_mugs {
+        display: flex;
+        width: 234px;
+        height: 16px;
+        padding-top: 32px;
+        padding-left: 43px;
+        gap: 36px;
+    }
+    
+    .arrow {
+        width: 50px;
+        height: 16px;
+    }
+    
+    .mug {
+        width: 68px;
+        height: 12px;
+        padding-top: 2px;
+    }
+}
+/* ----------- конец section 5----------- */
+
+
+/* ----------- начало section 6----------- */
+
+.section_6 {
+    display: flex;
+    width: 100%;
+    height: 785px;
+    background-color: #FFFCFA;
+}
+
+.section_6_picture {
+    width: 448px;
+    height: 464px;
+    padding-top: 172px;
+    padding-left: 160px;
+}
+
+.section_6_text {
+    padding-top: 120px;
+    padding-left: 172px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_6_description {
+    width: 490px;
+    height: 128px;
+    font-weight: 800;
+    font-size: 38px;
+    color: #1C1B2F;
+}
+
+.second_description {
+    width: 418px;
+    height: 27px;
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #1C1B2F;
+}
+
+.service_string1 {
+    display: flex;
+    width: 371px;
+    height: 70px;
+    padding-top: 22px;
+}
+
+.orange_border {
+    width: 4px;
+    height: 70px;
+    padding-top: 2px;
+}
+
+.service_list {
+    padding-left: 17px;
+    width: 350px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C1B2F;
+}
+
+.service_string2 {
+    display: flex;
+    width: 371px;
+    height: 46px;
+    padding-top: 20px;
+}
+
+.orange_border2 {
+    width: 4px;
+    height: 44px;
+    padding-top: 2px;
+}
+
+.service_list2 {
+    width: 350px;
+    height: 44px;
+    padding-left: 17px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C1B2F;
+}
+
+.service_string3 {
+    display: flex;
+    width: 439px;
+    height: 46px;
+    padding-top: 20px;
+}
+
+.service_list3 {
+    width: 418px;
+    height: 44px;
+    padding-left: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1C1B2F;
+}
+
+.third_button {
+    padding-top: 60px;
+}
+
+.third_button_setting {
+    width: 264px;
+    height: 48px;
+    background-color: #F38F57;
+    color: #FFF;
+    border: 2px solid #F38F57;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 320px) {
+    .section_6 {
+        height: 480px;
+        background-color: #FFFCFA;
+        flex-direction: column;
+    }
+    
+    .setting_picture {
+        visibility: hidden;
+        order: 2;
+    }
+
+    .section_6_picture {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        padding-top: 172px;
+        padding-left: 160px;
+    }
+
+    .section_6_text {
+        padding-top: 52px;
+        padding-left: 20px;
+        padding-bottom: 54px;
+        font-family: 'Montserrat', sans-serif;
+        order: 1;
+    }
+    
+    .section_6_description {
+        width: 280px;
+        height: 74px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #1C1B2F;
+    }
+
+    .second_description {
+        width: 183px;
+        height: 14px;
+        padding-top: 56px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #1C1B2F;
+    }
+
+    .service_string1 {
+        display: flex;
+        width: 230px;
+        height: 70px;
+        padding-top: 20px;
+    }
+    
+    .orange_border {
+        width: 4px;
+        height: 68px;
+        padding-top: 2px;
+    }
+    
+    .service_list {
+        padding-left: 12px;
+        width: 215px;
+        height: 68px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1C1B2F;
+    }
+    
+    .service_string2 {
+        display: flex;
+        width: 222px;
+        height: 52px;
+        padding-top: 18px;
+    }
+    
+    .orange_border2 {
+        width: 4px;
+        height: 50px;
+        padding-top: 2px;
+    }
+    
+    .service_list2 {
+        width: 206px;
+        height: 50px;
+        padding-left: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1C1B2F;
+    }
+    
+    .service_string3 {
+        display: flex;
+        width: 190px;
+        height: 52px;
+        padding-top: 20px;
+    }
+    
+    .service_list3 {
+        width: 173px;
+        height: 50px;
+        padding-left: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #1C1B2F;
+    }
+
+    .third_button {
+        padding-top: 60px;
+        visibility: hidden;
+    }
+    
+    .third_button_setting {
+        visibility: hidden;
+        width: 264px;
+        height: 48px;
+        background-color: #F38F57;
+        color: #FFF;
+        border: 2px solid #F38F57;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+/* ----------- конец section 6----------- */
+/* -----------конец кода для main----------- */
+
+/* ------------начало css кода для подвала------------ */
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    background-color: #1C1B2F;
+    width: 100%;
+    height: 229px;
+    color: #FFFFFF;
+}
+
+.footer_logo {
+    width: 156px;
+    height: 80px;
+    padding-left: 161px;
+    padding-top: 40px;
+}
+
+.footer_text {
+    padding-left: 189px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.index {
+    width: 225px;
+    height: 57px;
+    padding-top: 73px;
+    padding-left: 329px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer_mail {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 52px;
+    padding-top: 72px;
+}
+
+.footer_number {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 52px;
+    padding-top: 12px;
+}
+
+
+@media (max-width: 320px) {
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        background-color: #1C1B2F;
+        width: 100%;
+        height: 307px;
+        color: #FFFFFF;
+    }
+
+    .order1 {
+        order: 2;
+    }
+
+    .footer_logo {
+        visibility: hidden;
+        width: 30px;
+        height: 30px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    
+    .footer_text {
+        width: 231px;
+        height: 27px;
+        padding-left: 44px;
+        padding-top: 52x;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        order: 2;
+    }
+    
+    .index {
+        width: 208px;
+        height: 32px;
+        padding-top: 56px;
+        padding-left: 56px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        order: 0;
+    }
+    
+    .order2 {
+        order: 1;
+    }
+
+    .footer_mail {
+        width: 180px;
+        height: 14px;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 70px;
+        padding-top: 40px;
+        order: 1;
+    }
+    
+    .footer_number {
+        width: 149px;
+        height: 14px;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 85px;
+        padding-top: 12px;
+        order: 1;
+    }
+}
+/* ------------конец css кода для подвала------------ */
