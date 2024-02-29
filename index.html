@@ -12,51 +12,44 @@
 </head>
 
 <body>
-    <header>
-        <div class="header hidden">
-            <div class="header_phone_number">
-                <p>+7 (495) 228 11 10</p>
-            </div>
-            <div>
+    <header class="tablet">
+
+        <img class="tablet_logo" src="./assets/BlueLogo.svg" alt="Судебный эксперт">
+        <div class="icon_btn_dashes">
+            <img class="tablet_icon" src="./assets/Blueicon.png" alt="">
+            <button class="button_primary">Написать нам</button>
+            <img class="three_dashes" src="./assets/Burger.png" alt="">
+        </div>
+
+    </header>
+    <header class="dekstop mobile">
+        <div class="header_container padding_container hidden">
+            <p class="header_phone_number">+7 (495) 228 11 10</p>
+
+            <div class="registration_icon">
                 <p class="header_registration">Регистрация</p>
-            </div>
-            <div>
                 <img class="header_white_icon" src="./assets/WhiteIcon.png" alt="icon">
             </div>
         </div>
 
         <!-- логотип и вторая часть навигации -->
 
-        <div class="logo__container">
-            <div>
-                <img class="logo" src="./assets/BlueLogo.svg" alt="Судебный эксперт">
+        <div class="logo__container container">
+            <img class="logo" src="./assets/BlueLogo.svg" alt="Судебный эксперт">
+
+            <div class="price_faq">
+                <p class="price">Цены</p>
+                <img class="faq" src="./assets/FaqPicture.svg" alt="FAQ">
             </div>
-            <div>
-                <img class="second_icon" src="./assets/Blueicon.png" alt="">
-            </div>
-            <div>
-                <img class="three_dashes" src="./assets/Burger.png" alt="">
-            </div>
-            <nav>
-                <div class="btn_price_faq hidden">
-                    <p class="price">Цены</p>
-                    <img class="faq" src="./assets/FaqPicture.svg" alt="FAQ">
-                    <div class="button_settings">
-                        <button class="button_primary">Написать нам</button>
-                    </div>
-                </div>
-            </nav>
+            <button class="button_primary">Написать нам</button>
         </div>
     </header>
     <main>
         <!-- section 1 -->
-        <section>
-            <div class="achievements">
-                <!-- <img src="./assets/AThinkingMan.png" alt=""> -->
-                <h1>Не тратьте время <br>на составление документов</h1>
-                <div>
-                    <p class="h2_like">мы сделаем это за вас</p>
-                </div>
+        <section class="achievements container">
+            <h1>Не тратьте время <br>на составление документов</h1>
+            <p class="h2_like">мы сделаем это за вас</p>
+            <div class="achievements_container">
                 <div class="first_achievement">
                     <img class="checkmark" src="./assets/OrangeCheckmark.png" alt="">
                     <p class="firsr_achievement_text">Мы – специалисты широкого профиля</p>
@@ -67,62 +60,47 @@
                 </div>
                 <div class="third_achievement">
                     <img class="second_checkmark" src="./assets/OrangeCheckmark.png" alt="">
-                    <p class="third_achievement_text">С нами подготовить необходимые бумаги дешевле, чем сходить в кафе
+                    <p class="third_achievement_text">С нами подготовить необходимые <br>бумаги дешевле, чем сходить в
+                        кафе
                     </p>
                 </div>
-                <div class="setting_button_secondary hidden">
-                    <button class="button_secondary">Связаться с нами</button>
-                </div>
             </div>
+            <button class="button_secondary">Связаться с нами</button>
         </section>
 
         <!-- section 2 -->
-        <section>
-            <div class="rights_and_steps">
-                <div>
-                    <h2 class="protection_of_right">Защитить свои права просто!</h2>
-                    <h3 class="three_steps">Всего 3 шага</h3>
-                    <!-- <img class="line_image" src="./assets/MobileLine.png" alt=""> -->
+        <!-- <img class="line_image" src="./assets/MobileLine.png" alt=""> -->
+        <section class="rights_and_steps padding_container">
+            <h2 class="protection_of_right">Защитить свои права просто!</h2>
+            <p class="three_steps">Всего 3 шага</p>
+            <div class="steps_and_text">
+                <div class="step_container">
+                    <p class="step">01</p>
+                    <p class="text_under_step">Вы описываете свою ситуацию <br>направляете нам необходимые
+                        <br>документы
+                    </p>
                 </div>
-                <div class="steps_and_text">
-                    <div class="step_container">
-                        <p class="step">01</p>
-                        <p class="text_under_step">Вы описываете свою <br>ситуацию направляете нам необходимые
-                            <br>документы
-                        </p>
-                    </div>
-                    <div class="step_container">
-                        <p class="step">02</p>
-                        <p class="text_under_step">Мы изучаем их <br>и составляем <br>необходимое заявление,
-                            <br>ходатайство и т.д.
-                        </p>
-                    </div>
-                    <div class="step_container">
-                        <p class="step">03</p>
-                        <p class="text_under_step">При необходимости <br>представления ваших <br>интересов, наши
-                            <br>юристы
-                            участвуют в <br>судебном заседании
-                        </p>
-                    </div>
+                <div class="step_container">
+                    <p class="step">02</p>
+                    <p class="text_under_step">Мы изучаем их и составляем <br>необходимое заявление,
+                        <br>ходатайство и т.д.
+                    </p>
+                </div>
+                <div class="step_container">
+                    <p class="step">03</p>
+                    <p class="text_under_step">При необходимости представления <br>ваших интересов, наши
+                        юристы <br>участвуют в судебном заседании
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- section 3 -->
-        <section>
-            <div>
+        <section class="frames_and_price container">
+            <p class="price_question">Сколько заплатил бы истец?</p>
+            <div class="frames_with_prices">
                 <div>
-                    <p class="price_question">Сколько заплатил бы истец?</p>
-                </div>
-                <div class="comparisons">
-                    <div>
-                        <p class="comparison_actually">На самом деле</p>
-                    </div>
-                    <div>
-                        <p class="comparison_if">Если бы он нанял нас</p>
-                    </div>
-                </div>
-                <div class="frames_with_prices">
+                    <p class="comparison_actually">На самом деле</p>
                     <div class="blue_frame">
                         <div class="setting_blue_frame">
                             <p>40 000 ₽</p>
@@ -136,6 +114,10 @@
                             <p class="services">Услуги адвоката, <br>возмещенные истцу</p>
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <p class="comparison_if">Если бы он нанял нас</p>
                     <div class="orange_frame">
                         <div class="setting_orange_frame">
                             <p>(3 500 ₽ + 2 × 5 000 ₽)</p>
@@ -154,61 +136,62 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
         <!-- section 4 -->
         <section class="description_and_price_list">
-            <div>
-                <h2 class="service_price_title"> За конкретные документы или услуги – <br>конкретная цена </h2>
-            </div>
-            <div>
-                <p class="surcharge_comission">Никаких доплат и комиссий</p>
-            </div>
+            <h2 class="service_price_title"> За конкретные документы или услуги – <br>конкретная цена </h2>
+            <p class="surcharge_comission">Никаких доплат и комиссий</p>
+
             <div class="first_price_container">
-                <p class="price_three_thousand">3 500 ₽</p>
-                <p class="price_five_half_thousand">5 500 ₽</p>
+                <div>
+                    <p class="price_three_thousand">3 500 ₽</p>
+                    <p class="document_package">Подготовка пакета документов</p>
+                </div>
+                <div>
+                    <p class="price_five_half_thousand">5 500 ₽</p>
+                    <p class="document_court">Подготовка пакета <br>документов + подача <br>документов в суд</p>
+                </div>
             </div>
-            <div class="first_price_description_container">
-                <p class="document_package">Подготовка пакета <br>документов</p>
-                <p class="document_court">Подготовка пакета <br>документов + подача <br>документов в суд</p>
-            </div>
+
             <div class="second_price_container">
-                <p class="price_five_thousand">5 000 ₽</p>
-                <p class="price_six_half_thousand">6 500 ₽</p>
-            </div>
-            <div class="second_price_description_container">
-                <p class="court_agent">Участие нашего <br>представителя вместо вас <br>в судебном заседании <br>в
-                    г. Ростов-на-Дону
-                </p>
-                <p class="rostov_region">Eсли заседание в <br>Ростовской области</p>
+                <div>
+                    <p class="price_five_thousand">5 000 ₽</p>
+                    <p class="court_agent">Участие нашего <br>представителя вместо вас <br>в судебном заседании <br>в
+                        г. Ростов-на-Дону
+                    </p>
+                </div>
+                <div>
+                    <p class="price_six_half_thousand">6 500 ₽</p>
+                    <p class="rostov_region">Eсли заседание в <br>Ростовской области</p>
+                </div>
             </div>
         </section>
 
         <!-- section 5 -->
         <section>
             <div class="feedback">
-                <div>
-                    <p class="review">Отзывы наших клиентов</p>
-                </div>
-                <div class="setting_review_frame">
-                    <div class="review_frame">
-                        <div class="review_setting">
-                            <img class="picture_review_frame" src="./assets/ManInMug.png" alt="">
-                            <div>
-                                <p class="robert">Robert Fox</p>
-                                <p class="drafting_contract">Составление договора</p>
-                                <p class="foreign_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                                    <br>do amet sint. Velit
-                                    officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt
-                                    nostrud amet.
-                                </p>
+                <p class="review">Отзывы наших клиентов</p>
+                <div class="review_frame">
+                    <div class="review_setting">
+                        <img class="picture_review_frame" src="./assets/ManInMug.png" alt="">
+                        <div>
+                            <div class="tablet_mobile">
+                                <img class="secondary_review_picture" src="./assets/ManInMug.png" alt="">
+                                <div>
+                                    <p class="robert">Robert Fox</p>
+                                    <p class="drafting_contract">Составление договора</p>
+                                </div>
                             </div>
-                            <div>
-
-                            </div>
+                            <p class="foreign_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="arrows_and_mugs">
                     <img class="arrow" src="./assets/LeftArrow.png" alt="">
                     <img class="mug" src="./assets/Mugs.png" alt="">
@@ -219,17 +202,14 @@
 
         <!-- section 6 -->
         <section class="registration_description">
-            <div class="setting_picture">
-                <img class="girl_picture" src="./assets/GirlPicture.png" alt="">
-            </div>
-            <div class="explanation">
+            <img class="girl_picture" src="./assets/GirlPicture.png" alt="">
+            <div>
                 <p class="your_convenience">Для вашего удобства <br>мы создали личный <br>кабинет</p>
                 <p class="registration_can">Регистрация позволит: </p>
                 <div class="first_container_possibilities">
                     <img class="orange_border" src="./assets/OrangeBorder.png" alt="">
                     <p class="creation_documents">Отслеживать процесс создания <br>документов, знать когда и куда
-                        <br>они
-                        поданы
+                        <br>они поданы
                     </p>
                 </div>
                 <div class="second_container_possibilities">
@@ -240,23 +220,21 @@
                     <img class="orange_border2" src="./assets/OrangeBorder.png" alt="">
                     <p class="learn_about_solution">Узнать о принятом решении <br>по вашему заявлению</p>
                 </div>
-                <div class="btn_register_oneself">
-                    <button class="btn_register_oneself_setting">Зарегистрироваться</button>
-                </div>
+                <button class="btn_register_oneself">Зарегистрироваться</button>
             </div>
         </section>
     </main>
 
     <!-- ------------------подвал сайта------------------ -->
 
-    <footer>
-        <div class="footer_container">
-            <div class="order1">
-                <img class="footer_logo" src="./assets/LogoWhite.png" alt="">
-                <p class="public_offer">Пользуясь данным ресурсом вы <br>соглашаетесь с <u>публичной офертой</u></p>
-            </div>
+    <footer class="footer_container">
+        <div>
+            <img class="footer_logo" src="./assets/LogoWhite.png" alt="">
+            <p class="public_offer">Пользуясь данным ресурсом вы <br>соглашаетесь с <u>публичной офертой</u></p>
+        </div>
+        <div class="index_phone_mail">
             <p class="index">344000, г. Ростов-на-Дону,<br> ул. Суворова 52а,</p>
-            <div class="order2">
+            <div>
                 <p class="footer_mail">hello@expertcourt.ru</p>
                 <p class="footer_phone_number">+7 (495) 228 11 10</p>
             </div>
