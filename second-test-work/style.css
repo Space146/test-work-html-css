@@ -19,6 +19,9 @@ p {
     padding-right: 24px;
 }
 
+.mobile {
+    display: none;
+}
 
 /* --------------------Вернхняя часть блока-------------------- */
 
@@ -292,7 +295,78 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
 
+    .mobile {
+        display: block;
+    }
+
+    .padding_container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .mobile_block {
+        display: flex;
+        gap: 11px;
+    }
+
+    .numbers_score {
+        display: block;
+        padding-top: 19px;
+        padding-left: 24px;
+    }
+
+    .mac_picture {
+        width: 128px;
+        height: 128px;
+    }
+
+    .components {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .acer_sale {
+        display: flex;
+        gap: 12px;
+        padding-top: 12px;
+        padding-bottom: 16px;
+        align-items: center;
+    }
+    
+    .acer {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .info_button {
+        width: 240px;
+        height: 40px;
+        border: 1px solid #18A661;
+        border-radius: 38px;
+        background-color: #18A661;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 12px;
+    }
+
+    .compare_price_arrow {
+        display: flex;
+        gap: 4px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0px;
+        margin-bottom: 17px;
+    }
 }
 
 /* --------------------конец верхней части-------------------- */

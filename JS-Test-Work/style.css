@@ -1,0 +1,118 @@
+
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-mono-uniquifier {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #0b0b0b;
+    font-family: "Roboto Mono", monospace;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}  
+
+.main_container {
+    margin: 103px 350px 0px 398px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Alfa Slab One", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #266559;
+    margin: 0px 0px 43px 0px;
+}
+
+.h1_color {
+    color: #FFFFFF;
+}
+
+form {
+    display:flex;
+    flex-direction:row;
+    border:1px solid #0b0b0b;
+    padding:1px;
+}
+  
+.input_setting {
+    width: 716px;
+    height: 58px;
+    background-color: #1b1b1b;
+    flex-grow:2;
+    border:none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 250;
+    font-family: "Roboto Mono", monospace;
+    color: #ABABAB;
+    padding: 11px 0px 12px 18px; 
+    align-self: center;
+}
+
+  
+.SubmitBtn {
+    width: 35px;
+    height: 35px;
+    border:1px solid #1b1b1b;
+    background: #1b1b1b;
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    right: 365px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    padding: 0;
+}
+
+#taskList li {
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: #0b0b0b;
+    color: #FFFFFF;
+    margin-top: 25px;
+    align-items: center;
+}
+
+input[type="checkbox" ] {
+    width: 30px;
+    height: 30px;
+    margin: 3px 16px 3px 0px;
+}
+
+.DltBtn {
+    width: 34px;
+    height: 28px;
+    background-image: url(./assets/TrashBucket.svg);
+    background-position: -0.1vw;
+    background-repeat: no-repeat;
+    background-color: #0b0b0b;
+    color: #0b0b0b;
+    position: relative;
+    top: 2px;
+    left: 8px;
+    border:1px solid #0b0b0b;
+    cursor: pointer;
+    padding: 0;
+}
