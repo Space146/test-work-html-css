@@ -1,3 +1,4 @@
+
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
 const btn = document.querySelector(".submitBtn");
@@ -5,34 +6,31 @@ const taskForm = document.getElementById("taskForm");
 
 taskForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    const newTask = taskInput.value;
+    const newTask = taskInput.value.trim();
     if (newTask === '') {
         return alert('Нужно ввести что-то');
-    } else if (newTask === ' ') {
-        return alert('Просто пробел не считается');
-    } else if (newTask === '  ') {
-        return alert('не считается');
-    } else if (newTask === '   ') {
-        return alert('не считается');
-    } else if (newTask === '    ') {
-        return alert('не считается');
-    } else if (newTask === '     ') {
-        return alert('Серьезно?');
     };
     taskInput.value = '';
-    // Здесь всегда isChecked будет false
 
-    addTask(newTask);
+    addTask({text:newTask, completed: false});
 });
 
-// Метод должен принимать объект с полями value и isChecked
-function addTask(task) {
+function addTask(task = {text:'', completed: false}) {
     const listItem = document.createElement('li');
 
     const checkBox = document.createElement('input');
-    checkBox.setAttribute("value", task);
+    checkBox.setAttribute("value", task.text);
     checkBox.setAttribute('type', 'checkbox');
+    checkBox.classList.add("custom-checkbox");
+    checkBox.checked = task.completed;
+
     listItem.appendChild(checkBox);
+
+    const taskText = document.createElement('span');
+    taskText.classList.add("taskSpan");
+    taskText.textContent = task.text;
+    listItem.appendChild(taskText);
+
 
     checkBox.addEventListener("change", function() {
         if (checkBox.checked) {
@@ -43,16 +41,10 @@ function addTask(task) {
         saveToLocalStorage();
     });
 
-    const taskText = document.createElement('span');
-    taskText.textContent = task;
-    listItem.appendChild(taskText);
-
     const deleteButton = document.createElement('button');
     deleteButton.classList.add("DltBtn");
     listItem.appendChild(deleteButton);
     
-    taskList.appendChild(listItem);
-
     deleteButton.addEventListener('click', function() {
     taskList.removeChild(listItem);
     saveToLocalStorage();
@@ -66,6 +58,7 @@ function addTask(task) {
     deleteButton.style.display = 'none';
     });
 
+    taskList.appendChild(listItem);
     saveToLocalStorage();
 };
 
@@ -82,15 +75,13 @@ function saveToLocalStorage() {
 document.addEventListener('DOMContentLoaded', function() {
     const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
     savedTasks.forEach(task => {
-        // Здесь будет task.completed
-        addTask(task.text);
-        const checkBox = document.querySelector('input[value="' + task.text + '"]');
-        console.log(checkBox.checked, task);
+        addTask(task);
+        const checkBox = document.querySelector(`input[value="${task.text}"]`);
         if (checkBox) {
             checkBox.checked = task.completed;
             if (task.completed) {
                 checkBox.nextElementSibling.style.color = "#266559";
-            }
-        }
+            };
+        };
     });
 });

@@ -81,8 +81,10 @@ ul {
 
 li {
     display: flex;
-    font-family: "Roboto Mono", monospace;
+    position: relative;
     padding: 0;
+    width: 670px;
+    
 }
 
 #taskList li {
@@ -96,23 +98,62 @@ li {
 }
 
 input[type="checkbox" ] {
-    width: 30px;
-    height: 30px;
+    display: flex;
+    /* transform: scale(2.3); */
     margin: 3px 16px 3px 0px;
 }
 
+.custom-checkbox {
+    appearance: none;
+}
+  
+  .custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    min-width: 30px;
+    min-height: 30px;
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  .custom-checkbox::after {
+    position: absolute;
+    content: '';
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked::after {
+    content: '';
+    background-image: url(./assets/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: 0.36vw 0.75vh;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+/* .taskSpan {
+    
+} */
+
 .DltBtn {
-    width: 34px;
+    display: none;
+    width: 50px;
     height: 28px;
     background-image: url(./assets/TrashBucket.svg);
     background-position: -0.1vw;
     background-repeat: no-repeat;
     background-color: #0b0b0b;
     color: #0b0b0b;
-    position: relative;
-    top: 2px;
-    left: 8px;
+    position: absolute;
+    left: 660px;
     border:1px solid #0b0b0b;
     cursor: pointer;
-    padding: 0;
+    padding: 5px;
 }
