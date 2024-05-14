@@ -1,3 +1,15 @@
+let GLOBAL_TASKS = [];
+
+fetch("https://api.jsonbin.io/v3/b/663364bcacd3cb34a841d337", {
+    method: 'GET',
+    headers: {
+        'X-Access-Key': '$2a$10$uijBkGRgwPq6MvdtMvc6ueYABEeHl7.QFovkwRgdqOrUIkXyqP4cC',
+        'Content-Type': 'application/json'},
+}).then(response => response.json()).then(data=> {
+    console.log(data);
+    GLOBAL_TASKS = data.record;
+    GLOBAL_TASKS.forEach(task => loadFromBackend(task));
+});
 
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
@@ -8,14 +20,35 @@ taskForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const newTask = taskInput.value.trim();
     if (newTask === '') {
-        return alert('Нужно ввести что-то');
+        return alert('Нужно что-то ввести');
     };
     taskInput.value = '';
 
-    addTask({text:newTask, completed: false});
+    addTask([...GLOBAL_TASKS, {text:newTask, completed: false}]);
 });
 
-function addTask(task = {text:'', completed: false}) {
+function saveToBackend(task) {
+    fetch("https://api.jsonbin.io/v3/b/663364bcacd3cb34a841d337", {
+        method: 'PUT',
+        headers: {
+            'X-Access-Key': '$2a$10$uijBkGRgwPq6MvdtMvc6ueYABEeHl7.QFovkwRgdqOrUIkXyqP4cC',
+        'Content-Type': 'application/json'},
+        body: JSON.stringify([task]),
+    }).then(response => {
+        console.log(response);
+        if(!response.ok) {
+            console.log("ошибка");
+        }
+        return response.json();
+    });
+};
+
+function addTask(tasks) {
+      saveToBackend(tasks);
+};
+
+const loadFromBackend = function(task) {
+    console.log('task', task)
     const listItem = document.createElement('li');
 
     const checkBox = document.createElement('input');
@@ -31,14 +64,18 @@ function addTask(task = {text:'', completed: false}) {
     taskText.textContent = task.text;
     listItem.appendChild(taskText);
 
-
+    if (task.completed) {
+        taskText.style.color = "#266559";
+    } else {
+        taskText.style.color = "#FFFFFF";
+    }
     checkBox.addEventListener("change", function() {
         if (checkBox.checked) {
             taskText.style.color = "#266559";
         } else {
             taskText.style.color = "#FFFFFF";
         }
-        saveToLocalStorage();
+        saveToBackend({...task, completed: !task.completed})
     });
 
     const deleteButton = document.createElement('button');
@@ -46,8 +83,8 @@ function addTask(task = {text:'', completed: false}) {
     listItem.appendChild(deleteButton);
     
     deleteButton.addEventListener('click', function() {
-    taskList.removeChild(listItem);
-    saveToLocalStorage();
+        taskList.removeChild(listItem);
+    saveToBackend(task)
     });
 
     listItem.addEventListener('mouseover', function() {
@@ -59,29 +96,6 @@ function addTask(task = {text:'', completed: false}) {
     });
 
     taskList.appendChild(listItem);
-    saveToLocalStorage();
+    
+    return task;
 };
-
-function saveToLocalStorage() {
-    const tasks = [];
-    document.querySelectorAll('#taskList li').forEach(task => {
-        const taskText = task.querySelector('span').textContent;
-        const isCompleted = task.querySelector('input[type="checkbox"]').checked;
-        tasks.push({ text: taskText, completed: isCompleted });
-    });
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-};
-  
-document.addEventListener('DOMContentLoaded', function() {
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    savedTasks.forEach(task => {
-        addTask(task);
-        const checkBox = document.querySelector(`input[value="${task.text}"]`);
-        if (checkBox) {
-            checkBox.checked = task.completed;
-            if (task.completed) {
-                checkBox.nextElementSibling.style.color = "#266559";
-            };
-        };
-    });
-});
